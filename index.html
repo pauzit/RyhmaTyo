@@ -5,8 +5,19 @@
     <title>Juna-aikataulu</title>
 </head>
 <body>
-<h2>Aikataulu</h2>
-<p>Tänne sopivaa tekstiä</p>
+<h1>Aikatauluhaku</h1>
+<p>Valitse lähtöasema ja pääteasema alla olevasta valikosta.</p>
+
+<div>
+    <p>Mistä? <select id="departure">
+    </select></p>
+    <p>Mihin? <select id="arrival">
+    </select></p>
+    <p><input type="checkbox" value="sleeper">Display sleeper trains only<br></p>
+
+    <p><button id="search">Search</button></p>
+
+</div>
 
 <table>
     <thead>
@@ -20,10 +31,33 @@
     </thead>
     <tbody id="table"></tbody>
 </table>
+
+<hr>
+
+<div id = "history">
+    <h2>Previous searches</h2>
+
+    <table>
+        <thead>
+        <tr>
+
+            <th>Lähtöasema</th>
+            <th>Lähtöaika</th>
+            <th>Saapumisaika määräasemalle</th>
+            <th>Matka-aika</th>
+        </tr>
+        </thead>
+        <tbody id="historytable"></tbody>
+    </table>
+
+    <button id = "clearAll">Clear history</button>
+
+</div>
 <script src="https://code.jquery.com/jquery-1.12.4.js"
         integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
         crossorigin="anonymous"></script>
 
 <script src="code.js"> </script>
+
 </body>
 </html>
