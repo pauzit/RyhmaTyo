@@ -3,61 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Juna-aikataulu</title>
+    <link rel="stylesheet" href="TrainStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Julius+Sans+One|Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 </head>
-<body>
-<h1>Aikatauluhaku</h1>
-<p>Valitse lähtöasema ja pääteasema alla olevasta valikosta.</p>
-
+<div id = "moi"></div>
 <div>
-    <p>Mistä? <select id="departure">
-    </select></p>
-    <p>Mihin? <select id="arrival">
-    </select></p>
-    <p><input type="checkbox" value="sleeper">Display sleeper trains only<br></p>
+    <h1 id = "Aikatauluhakuh1">Aikatauluhaku</h1>
+    <div id="container">
+        <p id="valitse">Valitse lähtöasema ja pääteasema alla olevasta valikosta.</p>
+        <div>
+            <p>Mistä? <select id="departure">
+            </select></p>
+            <p>Mihin? <select id="arrival">
+            </select></p>
+            <p id = "valitsenukkumisvaunu"><input type="checkbox" value="sleeper" id="sleepBox">Haluan matkustaa makuuvaunussa<br></p>
+            <p>
+                <button id="search">Hae</button>
+            </p>
+        </div>
+        <div id="sorryNoTrains"></div>
+        <table id="taulu">
+            <thead>
+            <tr id="rivit">
+                <th>Lähtöasema</th>
+                <th>Lähtöaika</th>
+                <th>Saapumisasema</th>
+                <th>Saapumisaika</th>
+                <th>Matka-aika</th>
+            </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+        <div id="history">
+            <h2h2heading id="h2h">Viimeisin hakusi</h2h2heading>
 
-    <p><button id="search">Search</button></p>
-
+            <p id="sMessage"></p>
+            <p>Aiemmat hakusi: </p>
+            <ul id="lista"></ul>
+            <button id="clearAll">Tyhjennä historia</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
 </div>
-
-<table>
-    <thead>
-    <tr>
-
-        <th>Lähtöasema</th>
-        <th>Lähtöaika</th>
-        <th>Saapumisaika määräasemalle</th>
-        <th>Matka-aika</th>
-    </tr>
-    </thead>
-    <tbody id="table"></tbody>
-</table>
-
-<hr>
-
-<div id = "history">
-    <h2>Previous searches</h2>
-
-    <table>
-        <thead>
-        <tr>
-
-            <th>Lähtöasema</th>
-            <th>Lähtöaika</th>
-            <th>Saapumisaika määräasemalle</th>
-            <th>Matka-aika</th>
-        </tr>
-        </thead>
-        <tbody id="historytable"></tbody>
-    </table>
-
-    <button id = "clearAll">Clear history</button>
-
-</div>
-<script src="https://code.jquery.com/jquery-1.12.4.js"
-        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-        crossorigin="anonymous"></script>
-
-<script src="code.js"> </script>
-
 </body>
 </html>

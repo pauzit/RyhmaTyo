@@ -1,0 +1,144 @@
+/*
+Roosa
+ */
+
+body {
+    background: #f8f1ec;
+    color: #cf9f7d;
+    background-size: cover;
+    /*background-repeat: repeat;*/ /*Tämä oli vaihtoehtoinen taustatkaisu*/
+    background-attachment: fixed; /*lopullinen taustan ratkaisu. Pitää sen paikallaan, eikä kuva pikselöidy esim aikatauluhausn yhteydessä*/
+    background-image: url(https://images.pexels.com/photos/696644/pexels-photo-696644.jpeg?cs=srgb&dl=abstract-art-background-696644.jpg&fm=jpg);
+    padding: 5%;
+    padding-top: 170px;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Julius Sans One', sans-serif;
+    /*Isoin ongelma taustan kanssa oli muutokset html:ssä.
+    Taustan asemointia piti moneen otteeseen muuttaa, jotta se vastasi esimerkiksi taulukoiden eri variaatioita.
+    Kuvan väritys asetti myös omat haasteensa ja uudet ominaisuudet muuttivat vaatimuksia joka kerta*/
+}
+section {
+    margin-top: 50%;
+}
+#keskikohta {
+
+    background-image: url("https://images.pexels.com/photos/696644/pexels-photo-696644.jpeg?cs=srgb&dl=abstract-art-background-696644.jpg&fm=jpg");
+}
+#container {
+    background-color: #e0e0d5;
+}
+
+h1#Aikatauluhakuh1 {
+    font-size: 85px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    padding-top: 30px;
+    color: #f0f0f5;
+    /*Hieman voisi viilata värimaailmaa tai joku boxi alle,
+    koska näkyvyys on hieman heikko aikatauluhaun ollessa pisaroiden päällä */
+}
+
+#valitse {
+    font-size:35px;
+    text-align:center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#moi {
+    padding-top: 20px;
+}
+p {
+    color: navy;
+    text-align: center;
+}
+#search {
+    font-size:25px;
+    text-align: center;
+    padding: 0px 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#sorryNoTrains {
+    font-size: 20px;
+    text-align: center;
+    color: navy;
+    background-image: linear-gradient(#e0e0d5, #e0e0d6);
+    font-family: 'Julius Sans One', sans-serif;
+    line-height: 26pt;
+}
+#clearAll{
+    font-size:20px;
+    padding: 0px 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#rivit{
+    font-size: 20px;
+    text-align: center;
+    color: navy;
+    background-image: linear-gradient(#c2c2a3, #c2c2a3);
+    font-family: 'Julius Sans One', sans-serif;
+    border-style: solid;
+    /*seuraavasaa sprintissä tähän toki toteutuisi esim joka toinen kolumni eri värillä tms */
+}
+#taulu{
+    font-size: 30px;
+    text-align: center;
+    color: navy;
+    background-image: linear-gradient(#f0f0f5, #d1d1e3);
+    font-family: 'Julius Sans One', sans-serif;
+    border-style: solid;
+    margin: auto;
+}
+#table{
+    font-size: 20px;
+    text-align: center;
+    background-color: #f0f0f5;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#h2heading{
+    font-size:30px;
+    text-align:center;
+    color: navy;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#rivit2{
+    font-size: 20px;
+    text-align: center;
+    color: navy;
+    background-image: linear-gradient(#f0f0f5, #d1d1e3);
+    font-family: 'Julius Sans One', sans-serif;
+    border-style: solid;
+
+}
+#valitsenukkumisvaunu{
+    font-size:20px;
+    text-align:center;
+    color: navy;
+    font-family: 'Julius Sans One', sans-serif;
+    /*
+tämä ok
+ */
+}
+
+#h2h {
+    font-size:20px;
+    text-align:center;
+    color: navy;
+    font-family: 'Julius Sans One', sans-serif;
+}
+#sMessage {
+    font-size:20px;
+    text-align:center;
+    color: navy;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+ul {
+    list-style: none;
+    /*
+    kumotaan automaattinen ul-listan muotoilu
+     */
+}
+
+
