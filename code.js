@@ -1,3 +1,5 @@
+//forkkaustesti
+
 var baseurl= 'https://rata.digitraffic.fi/api/v1/live-trains/station/';
 var train;
 var opt = {hour: '2-digit',  minute: '2-digit', hour12: false};
